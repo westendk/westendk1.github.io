@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+<!-- Kennedy Westendorff- CSCE 102- H01 -->
+<meta charset= "utf-8">
+
+<title> Lab 12 Greeting Card </title>
+
+
+
+<style>
+
+body 
+{
+background-color:skyblue;
+}
+
+
+#greeting
+{
+background-color:white;
+color:pink;
+border:20px solid red;
+height: 700px;
+width:600px;
+position:absolute;
+top:100px;
+left:300px;
+right:400px;
+text-align:center;
+padding:100px;
+font-size:100px;
+}
+
+
+#arm
+{
+position:absolute;
+top:500px;
+left:500px;
+}
+
+
+</style>
+
+
+
+<script>
+
+function switch1 ()
+{
+document.getElementById("greeting").innerHTML="We Love You!";
+}
+
+
+function convert()
+{
+document.getElementById("arm").src="Heart.jpg";
+}
+
+
+</script>
+
+
+
+</head>
+
+
+
+
+<body>
+
+
+
+<div id="greeting" onclick="switch1()">
+You Can Do This!
+</div>
+
+
+
+<img onmouseover="convert()" id="arm" src="strongarm.jpg" alt="emoji" height="400" width="400">
+
+
+<h6 style="color:white"> Please click on the text to change the text </h6>
+
+
+<h6 style="color:white"> Please mouse over the strong arm to change the image </h6>
+
+
+
+<a href="westendk.github.io"> </a>
+
+</body>
+</html>
